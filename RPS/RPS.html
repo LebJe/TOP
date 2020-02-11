@@ -78,11 +78,11 @@
 
 				const result = playRound(choice, computerChoice);
 
-				if (result == `You Lose! ${computerChoice} beats ${choice}.`) {
+				if (result === `You Lose! ${computerChoice} beats ${choice}.`) {
 					
 					computerScore++;
 
-				}else if (result == `You win! ${choice} beats ${computerChoice}.`) {
+				}else if (result === `You win! ${choice} beats ${computerChoice}.`) {
 					
 					playerScore++;
 
@@ -92,7 +92,7 @@
 			}
 
 			if (playerScore > computerScore) {
-				console.log("You won! Congradulations!")
+				console.log("You won! Congratulations!")
 			} else if (computerScore > playerScore) {
 				console.log("You lost. Try again.")
 			} else {
